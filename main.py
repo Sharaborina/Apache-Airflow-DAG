@@ -8,7 +8,7 @@ import json
 # Загрузка данных о погоде из API OpenWeatherMap и сохранения в файл weather_data.json
 def download_weather_data():
     print('starting')
-    api_key = '473461bf3491ed06a098c6964e7ad2fe'
+    api_key = 'your_actual_api_key'
     city = 'London'
     url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}'
     response = requests.get(url)
